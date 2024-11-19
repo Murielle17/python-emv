@@ -17,8 +17,8 @@ LOG_LEVELS = {"info": logging.INFO, "debug": logging.DEBUG, "warn": logging.WARN
 
 def as_table(tlv, title=None, redact=False):
     res = [["Tag", "Name", "Value"]]
-    if type(tlv) is not TLV:
-        return ""
+    if not isinstance(tlv, TLV):
+        return ""  # Assurez-vous que ceci est dans une fonction
     for tag, value in tlv.items():
         res.append(
             [
