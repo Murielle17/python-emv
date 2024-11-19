@@ -37,7 +37,7 @@ setup(
         "pyscard==2.0.0",
         "pycountry==20.7.3",
         "terminaltables==3.1.0",
-        "click==7.1.2",
+        "click==8.0.0",
     ],
     entry_points={  # Scripts de console
         "console_scripts": [
